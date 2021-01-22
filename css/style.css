@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    width: 100%;
+    height: 100%;
+    background: white;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+.wrapper 
+{
+    height: 100%;
+    width: 50%;
+    background: #faed26;
+    overflow: hidden;
+    color:  blue;
+    text-shadow: 1px 1px black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 2px solid #1a1502;
+}
+
+.texto 
+{
+    position:absolute;
+    top: 50%;
+    white-space: nowrap;
+    font-size: 90px;
+    line-height: 200px;
+    overflow: hidden;
+    font-family:Verdana;
+    animation: animate 7s linear infinite;
+}
+
+.container .texto span:nth-of-type(3){
+    position: relative;
+    top: 50px;
+   
+}
+
+.container .texto span:nth-of-type(8){
+    position: relative;
+    top: 150px;
+    transform: rotate(-150deg); 
+   
+}
+
+@keyframes animate{
+    from{
+    transform: translate(80%, -60%)
+    }
+    to{
+    transform: translate(-100%, -60%);
+    } 
+    
+}
